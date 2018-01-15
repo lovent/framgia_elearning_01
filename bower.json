@@ -1,0 +1,25 @@
+{
+  "name": "framgia_elearning_01",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Vuong <vuongthai95@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lovent/framgia_elearning_01",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#^3.3.7",
+    "jquery-flexdatalist": "https://github.com/sergiodlopes/jquery-flexdatalist.git#^2.2.2",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#^4.7.0",
+    "Ionicons": "https://github.com/ionic-team/ionicons.git#^2.0.1",
+    "admin-lte": "https://github.com/almasaeed2010/AdminLTE.git#^2.4.2"
+  }
+}
