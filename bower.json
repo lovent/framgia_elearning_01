@@ -1,0 +1,21 @@
+{
+  "name": "framgia_elearning_01",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Trung <nguyenmanhtrung2212@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/framgia/framgia_elearning_01",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "demo-bower": "https://github.com/TrungNguyen284/demo-bower.git",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#^4.7.0"
+  }
+}
