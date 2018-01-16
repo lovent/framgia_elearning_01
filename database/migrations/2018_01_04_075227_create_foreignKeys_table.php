@@ -32,10 +32,10 @@ class CreateForeignKeysTable extends Migration
             $table->foreign('school_id')->references('id')->on('schools')->onDelete('cascade');
         });
         Schema::table('schools', function (Blueprint $table) {
-            $table->foreign('city_id')->refrences('id')->on('cities')->onDelete('cascade');
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
         });
         Schema::table('social_accounts', function (Blueprint $table) {
-            $table->foreign('student_id')->refrences('id')->on('students')->onDelete('cascade');
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
         });
     }
 
