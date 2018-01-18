@@ -22,7 +22,6 @@ class CreateForeignKeysTable extends Migration
             $table->foreign('class_id')->references('id')->on('classes')->onDelete('cascade');
         });
         Schema::table('classes', function (Blueprint $table) {
-            $table->foreign('subject_id')->references('id')->on('subjects')->onDelete('cascade');
             $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
         });
         Schema::table('students', function (Blueprint $table) {
@@ -30,13 +29,7 @@ class CreateForeignKeysTable extends Migration
         });
         Schema::table('teachers', function (Blueprint $table) {
             $table->foreign('school_id')->references('id')->on('schools')->onDelete('cascade');
-        });
-        Schema::table('schools', function (Blueprint $table) {
-            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
-        });
-        Schema::table('social_accounts', function (Blueprint $table) {
-            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-        });
+        });    
     }
 
     /**
