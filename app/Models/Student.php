@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Student extends Model
 {
     protected $fillable = [
@@ -20,6 +21,11 @@ class Student extends Model
         'password',
         'remember_token',
     ];
+
+    public function scopeActive($query)
+    {
+        return $query->where('active', 1)->orderBy('created_at', 'DESC');
+    }
 
     public function school()
     {

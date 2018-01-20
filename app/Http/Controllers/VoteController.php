@@ -8,6 +8,6 @@ class VoteController extends Controller
 {
     public function index()
     {
-    	return view('admin.vote.index');
+        return view('admin.vote.index');
     }
 }

@@ -3,6 +3,6 @@
 @endsection
 
 @section('content')
-	@parent
+    @parent
     <p>Đăng ký học</p>
 @endsection

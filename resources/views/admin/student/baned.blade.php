@@ -7,11 +7,11 @@
 @section('content')
     @parent
     <div class="row">
-        <section class="content">
+        <section class="content">            
             <div class="col-md-12 col-md-offset-0">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="pull-left"><h3>Danh sách học viên</h3></div>
+                        <div class="pull-left"><h3>Danh sách học viên bị cấm</h3></div>
 
                         <div class="table-container">
                             <table id="mytable" class="table table-bordred table-striped">       
@@ -35,13 +35,7 @@
                                         <td>{{$student->address}}</td>
                                         <td>{{$student->phone_number}}</td>
                                         <td>{{$student->description}}</td>
-                                        <td><a href="{{route('student.update', ['id'=> $student->id])}}" class="btn btn-sm btn-info">Cấm</a></td>
-                                        <td> 
-                                            <form action="{{route('student.destroy', ['id' =>$student->id])}}" method="post">{{csrf_field()}}
-                                            <input name="_method" type="hidden" value="DELETE">
-                                            <button class="btn btn-sm btn-danger" type="submit">Xóa</button>
-                                            </form>
-                                        </td>
+                                        <td><a href="{{route('student.update', ['id'=> $student->id])}}" class="btn btn-sm btn-info">Gỡ ban</a></td>
                                     </tr>
                                     @endforeach
                                 </tbody>

@@ -9,8 +9,28 @@ class School extends Model
     protected $fillable = [
         'name',
         'description',
-        'city_id',
+        'city',
     ];
+
+    public function scopeOrderbyid($query)
+    {
+        return $query->orderBy('id');
+    }
+
+    public function saveschool($data)
+    {
+        $this->name = $data['name'];
+        $this->city = $data['city'];
+        $this->save();
+    }
+
+    public function updateschool($data)
+    {
+        $school = $this->find($data['id']);
+        $school->name = $data['name'];
+        $school->city = $data['city'];
+        $school->save();
+    }
 
     public function city()
     {
